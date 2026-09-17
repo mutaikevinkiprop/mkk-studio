@@ -1,187 +1,180 @@
-# mkk Studio — Premium Digital Experience & Lead Management
+# mkk Studio
 
-## ?? Brand Identity
+A high-fidelity studio website and lead-management (CRM) platform built with Next.js 14 (App Router), TypeScript, and Tailwind CSS.
 
-### Color System
-- **Ink Navy**: #0F172A (primary foundation)
-- **Signal Cyan**: #22D3EE (accent, used strategically)
-- **Neutral Palette**: Derived grayscale for hierarchy
-- **Rule**: No gradients, no supplementary colors beyond documented palette
-
-### Typography
-- **Display**: Space Grotesk (400, 500, 600, 700 weights)
-- **Interface**: Inter (400, 500, 600 weights)
-- **Approach**: Large scale, intentional spacing, strong tracking
-
-### Visual Language
-- Sharp/angular geometry
-- Subtle radius (4-8px maximum)
-- Flat surfaces, minimal shadows
-- 8px spacing system
-- 12-column desktop grid
-- No pills, rounded cards, or glassmorphism
-
-## ?? Project Structure
-
-`
-mkk-studio/
-+-- src/
-¦   +-- app/                    # Next.js 14 App Router
-¦   ¦   +-- layout.tsx
-¦   ¦   +-- page.tsx           # Homepage
-¦   ¦   +-- (public)/
-¦   ¦   ¦   +-- work/          # Portfolio
-¦   ¦   ¦   +-- about/         # About
-¦   ¦   ¦   +-- contact/       # Contact form
-¦   ¦   +-- (admin)/
-¦   ¦       +-- dashboard/     # CRM Dashboard
-¦   ¦       +-- leads/         # Lead management
-¦   ¦       +-- settings/      # Admin settings
-¦   +-- components/
-¦   ¦   +-- ui/               # Base UI components
-¦   ¦   +-- sections/         # Page sections
-¦   ¦   +-- admin/            # Admin components
-¦   +-- lib/
-¦   ¦   +-- utils.ts
-¦   ¦   +-- db.ts
-¦   ¦   +-- auth.ts
-¦   +-- api/
-¦   ¦   +-- leads/
-¦   ¦   +-- auth/
-¦   ¦   +-- projects/
-¦   +-- styles/
-¦       +-- globals.css
-+-- public/
-¦   +-- images/
-+-- prisma/
-¦   +-- schema.prisma
-+-- .env.local
-+-- tailwind.config.ts
-+-- next.config.ts
-+-- tsconfig.json
-`
-
-## ?? Technology Stack
-
-### Frontend
-- **Next.js 14** - React framework with App Router
-- **TypeScript** - Type safety
-- **TailwindCSS** - Utility-first styling with mkk tokens
-- **Framer Motion** - Sophisticated, purposeful motion
-- **Radix UI** - Accessible component primitives
-
-### Backend
-- **API Routes** - Next.js API endpoints
-- **Prisma ORM** - Database abstraction
-- **PostgreSQL** - Production database
-- **JWT** - Authentication
-- **Nodemailer** - Email service
-
-## ?? Core Features
-
-### Public Website
-1. **Homepage**
-   - Art-directed hero
-   - Services overview
-   - Portfolio showcase (asymmetrical grid)
-   - CTA section
-   
-2. **Portfolio/Work**
-   - Variable project sizes
-   - Full-bleed imagery
-   - Case study details
-   - Rich metadata
-   
-3. **About**
-   - Studio positioning
-   - Brand values
-   - Team information
-   
-4. **Contact/Inquiry**
-   - "Start a Project" form
-   - Real-time validation
-   - Integrated CRM capture
-
-### Admin CRM
-1. **Dashboard**
-   - Lead overview
-   - Quick statistics
-   - Pipeline visualization
-   
-2. **Lead Management**
-   - Lead table
-   - Detail views
-   - Status tracking
-   - Follow-up scheduling
-   
-3. **Settings**
-   - Team management
-   - Email templates
-   - Notification preferences
-
-## ?? Design Principles
-
-### Brand Hierarchy
-1. **Typography** - Message first
-2. **Content** - Substance
-3. **Imagery** - Context
-4. **Motion** - Pacing
-5. **Interaction** - Engagement
-6. **UI** - Support
-
-### Motion Language
-- Subtle, precise animations (no bouncing)
-- Scroll-triggered reveals
-- Hover transformations
-- Text and image reveals
-- Page entrance effects
-- Respect prefers-reduced-motion
-
-### Responsive Design
-- Mobile-first approach
-- Layout recomposition (not shrinking)
-- Brand consistency across breakpoints
-- Intentional whitespace preservation
-
-## ? Success Criteria
-
-- [x] Immediately recognizable as mkk Studio
-- [x] World-class digital craftsmanship
-- [x] Fast performance (<2s load)
-- [x] WCAG 2.1 AA accessibility
-- [x] Effective lead generation
-- [x] Scalable architecture
-
-## ?? Development Roadmap
-
-### Phase 1: Foundation
-- [x] Project setup
-- [x] Design tokens
-- [ ] Component library
-- [ ] Database schema
-
-### Phase 2: Frontend
-- [ ] Homepage
-- [ ] Portfolio
-- [ ] About
-- [ ] Contact form
-
-### Phase 3: Backend
-- [ ] Lead API
-- [ ] Email service
-- [ ] Authentication
-- [ ] Database
-
-### Phase 4: Admin CRM
-- [ ] Dashboard
-- [ ] Lead management
-- [ ] Settings
-
-### Phase 5: Launch
-- [ ] Performance optimization
-- [ ] Testing
-- [ ] Deployment
+mkk Studio is a creative development practice. This repository contains both the public-facing marketing site and an internal admin area for managing inbound leads.
 
 ---
 
-**Brand First. Digital Craft. Original Content.**
+## Features
+
+### Public site
+- **Home** - art-directed hero, marquee, services, selected work showcase, manifesto, and CTA sections
+- **Work** - editorial portfolio grid with variable project sizing
+- **Studio** - studio positioning, values, and team information
+- **Contact** - project inquiry form with validation, wired to lead capture
+
+### Admin (CRM)
+- **Dashboard** - lead overview and pipeline statistics
+- **Leads** - lead table with detail views and status tracking
+- **Settings** - team, email, and notification configuration
+
+### Experience layer
+- Custom cursor and magnetic interactions (fine-pointer devices only)
+- Lenis smooth scrolling and GSAP/Framer Motion driven reveals
+- Preloader and page transitions
+- Full `prefers-reduced-motion` support
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+| --- | --- |
+| Framework | Next.js 14 (App Router) |
+| Language | TypeScript |
+| Styling | Tailwind CSS (custom `mkk` design tokens) |
+| Motion | Framer Motion, GSAP, Lenis |
+| Data | Prisma ORM + PostgreSQL |
+| Auth | JWT |
+| Email | Nodemailer |
+| Images | Next.js Image optimization (`sharp`) |
+
+---
+
+## Getting Started
+
+### Prerequisites
+- Node.js 18.17 or later
+- PostgreSQL (for the admin/CRM features)
+
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+### 2. Configure environment
+
+Create a `.env.local` file in the project root:
+
+```bash
+# PostgreSQL connection string (used by Prisma)
+DATABASE_URL="postgresql://user:password@localhost:5432/mkk_studio?schema=public"
+
+# Auth
+JWT_SECRET="your-secret-key"
+
+# Email (Nodemailer)
+SMTP_HOST="smtp.example.com"
+SMTP_PORT=587
+SMTP_USER="you@example.com"
+SMTP_PASS="your-password"
+```
+
+### 3. Set up the database
+
+```bash
+npx prisma generate
+npx prisma db push
+```
+
+### 4. Run the development server
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) for the public site and [http://localhost:3000/dashboard](http://localhost:3000/dashboard) for the admin area.
+
+---
+
+## Available Scripts
+
+| Script | Description |
+| --- | --- |
+| `npm run dev` | Start the development server |
+| `npm run build` | Create a production build |
+| `npm run start` | Run the production server |
+| `npm run lint` | Run ESLint |
+| `npm run typecheck` | Run the TypeScript compiler (no emit) |
+
+---
+
+## Project Structure
+
+```
+mkk-studio/
+|-- prisma/
+|   `-- schema.prisma          # Lead, Project, User, Email models
+|-- public/                    # Static assets
+|-- src/
+|   |-- app/                   # Next.js App Router
+|   |   |-- (public)/          # Public route group - work, about, contact
+|   |   |-- (admin)/           # Admin route group - dashboard, leads, settings
+|   |   |-- api/               # API routes - leads, auth
+|   |   |-- layout.tsx         # Root layout
+|   |   `-- page.tsx           # Homepage
+|   |-- components/
+|   |   |-- cursor/            # CustomCursor
+|   |   |-- layout/            # Navigation, Footer, Preloader, SmoothScroll, PageTransition
+|   |   |-- motion/            # AnimatedText, ImageReveal, Magnetic, Marquee, InteractiveSphere
+|   |   `-- sections/          # Hero, Services, SelectedWork, Manifesto, CTA, HorizontalShowcase
+|   |-- content/
+|   |   `-- site.ts            # All site copy and data (single source of truth)
+|   |-- hooks/                 # usePrefersReducedMotion, useHasFinePointer
+|   |-- lib/                   # Utilities
+|   `-- styles/
+|       `-- globals.css        # Global styles and design tokens
+|-- tailwind.config.ts         # Design tokens (color, type, motion)
+`-- next.config.js
+```
+
+---
+
+## Design System
+
+Content lives in `src/content/site.ts` so the interface can be re-skinned without touching components. Tokens live in `tailwind.config.ts`.
+
+### Color
+- **Ink Navy** - `#0F172A` (primary foundation), with a `900`-`600` scale
+- **Signal Cyan** - `#22D3EE` (accent), with `400`/`300` variants
+- **Neutral** - derived grayscale (`50`-`900`) for hierarchy
+
+No gradients and no colors beyond the documented palette.
+
+### Typography
+- **Display** - Space Grotesk (interface headings, large scale)
+- **Sans** - Inter (body and UI)
+- Extended type scale from `xs` through `10xl`
+
+### Form & Motion
+- Maximum radius of `8px` (`md`); no pills, glassmorphism, or soft cards
+- Flat surfaces, minimal shadow, 8px spacing system
+- Custom easing: `ease-mkk` = `cubic-bezier(0.16, 1, 0.3, 1)`
+- All motion respects `prefers-reduced-motion`
+
+---
+
+## API Reference
+
+| Method | Endpoint | Description |
+| --- | --- | --- |
+| `GET` | `/api/leads` | List leads |
+| `POST` | `/api/leads` | Create a lead from the contact form |
+| `POST` | `/api/auth` | Authenticate an admin user |
+
+> **Note:** API routes are currently scaffolded with in-memory sample data and marked with `TODO`s for Prisma/database wiring, JWT generation, and email delivery.
+
+---
+
+## Deployment
+
+1. Set all environment variables (see `Getting Started`) in your hosting provider.
+2. Run `npm run build` to produce the production bundle.
+3. Run `npm run start` to serve it.
+4. Point a PostgreSQL instance at `DATABASE_URL` and apply the Prisma schema.
+
+---
+
+**Brand first. Digital craft. Original content.**
