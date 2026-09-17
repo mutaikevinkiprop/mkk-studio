@@ -1,0 +1,156 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   mkk Studio — Global Foundation
+   ============================================================ */
+
+:root {
+  --mkk-ink: #0f172a;
+  --mkk-ink-800: #1a2236;
+  --mkk-ink-700: #232d45;
+  --mkk-signal: #22d3ee;
+  --mkk-line: rgba(148, 163, 184, 0.14);
+  --mkk-ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+html {
+  /* Lenis drives scrolling; disable native smooth to avoid conflict */
+  scroll-behavior: auto;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--mkk-ink);
+  color: #f1f5f9;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Hide native cursor on fine-pointer devices where custom cursor is active */
+@media (hover: hover) and (pointer: fine) {
+  body.mkk-cursor-active,
+  body.mkk-cursor-active * {
+    cursor: none !important;
+  }
+}
+
+/* ============================================================
+   Display Typography — Space Grotesk, large intentional scale
+   ============================================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 0.98;
+}
+
+/* ============================================================
+   Layout Grid — 12 / 6 / 3 columns
+   ============================================================ */
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding-left: clamp(1.25rem, 5vw, 5rem);
+  padding-right: clamp(1.25rem, 5vw, 5rem);
+}
+
+@media (max-width: 1024px) {
+  .container-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .container-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+}
+
+/* ============================================================
+   Helpers
+   ============================================================ */
+.edge-fade {
+  border-top: 1px solid var(--mkk-line);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Line-mask reveal: wrap each line in this wrapper */
+.line-mask {
+  display: block;
+  overflow: hidden;
+}
+
+.line-mask > span {
+  display: block;
+  will-change: transform;
+}
+
+/* Accessibility */
+:focus-visible {
+  outline: 2px solid var(--mkk-signal);
+  outline-offset: 4px;
+}
+
+::selection {
+  background-color: var(--mkk-signal);
+  color: var(--mkk-ink);
+}
+
+/* Thin custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--mkk-ink);
+}
+::-webkit-scrollbar-thumb {
+  background: #2f3b59;
+}
+
+/* ============================================================
+   Reduced Motion
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
