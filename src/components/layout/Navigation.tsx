@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
@@ -47,8 +47,8 @@ export function Navigation() {
     <>
       <header
         className={cn(
-          'fixed inset-x-0 top-0 z-[9000] transition-colors duration-500',
-          scrolled && !open ? 'mix-blend-difference' : ''
+          'fixed inset-x-0 top-0 z-[9000] border-b border-transparent bg-ink-navy transition-colors duration-500',
+          scrolled ? 'border-ink-700' : ''
         )}
       >
         <div className='container-grid items-center py-6 md:py-8'>
@@ -94,9 +94,9 @@ export function Navigation() {
             data-cursor-label={open ? 'Close' : 'Menu'}
             aria-label={open ? 'Close menu' : 'Open menu'}
             aria-expanded={open}
-            className='col-span-6 flex items-center justify-end gap-3 md:col-span-6'
+            className='col-span-6 flex items-center justify-end gap-3 md:hidden'
           >
-            <span className='hidden font-display text-xs uppercase tracking-[0.2em] text-neutral-300 md:inline'>
+            <span className='font-display text-xs uppercase tracking-[0.2em] text-neutral-300'>
               {open ? 'Close' : 'Menu'}
             </span>
             <span className='relative flex h-6 w-8 flex-col justify-center gap-1.5'>
