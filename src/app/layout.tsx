@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next'
+import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 import '../styles/globals.css'
 import { SmoothScroll } from '@/components/layout/SmoothScroll'
@@ -9,13 +9,13 @@ import { Footer } from '@/components/layout/Footer'
 
 export const metadata: Metadata = {
   title: {
-    default: 'mkk Studio — Digital Craft Studio',
-    template: '%s — mkk Studio',
+    default: 'mkk Studio - Digital Craft Studio',
+    template: '%s - mkk Studio',
   },
   description:
     'mkk Studio is a creative development practice building brands, websites and interactive experiences with precision.',
   openGraph: {
-    title: 'mkk Studio — Digital Craft Studio',
+    title: 'mkk Studio - Digital Craft Studio',
     description:
       'Brand systems, web experiences and interactive motion, engineered end-to-end.',
     type: 'website',

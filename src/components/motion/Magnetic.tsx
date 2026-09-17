@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 
 import { useRef, type ReactNode } from 'react'
 import { motion, useMotionValue, useSpring } from 'framer-motion'
@@ -8,12 +8,12 @@ import { cn } from '@/lib/utils'
 type MagneticProps = {
   children: ReactNode
   className?: string
-  /** How strongly the element is pulled toward the cursor (0–1). */
+  /** How strongly the element is pulled toward the cursor (0-1). */
   strength?: number
 }
 
 /**
- * Magnetic — element drifts toward the cursor on hover, then springs back.
+ * Magnetic - element drifts toward the cursor on hover, then springs back.
  * Used on the primary CTA and nav actions.
  */
 export function Magnetic({ children, className, strength = 0.4 }: MagneticProps) {

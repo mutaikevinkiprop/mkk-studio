@@ -20,7 +20,7 @@ type AnimatedTextProps = {
 }
 
 /**
- * AnimatedText — cinematic line-by-line mask reveal.
+ * AnimatedText - cinematic line-by-line mask reveal.
  * Each line slides up from behind a clipping mask, matching the
  * reference site's heading treatment.
  */

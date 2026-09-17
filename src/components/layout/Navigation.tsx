@@ -9,7 +9,7 @@ import { navigation, site } from '@/content/site'
 import { cn } from '@/lib/utils'
 
 /**
- * Navigation — fixed header with brand mark, desktop links, and a
+ * Navigation - fixed header with brand mark, desktop links, and a
  * fullscreen overlay menu (staggered items + curtain) for all viewports.
  */
 export function Navigation() {

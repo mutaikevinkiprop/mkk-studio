@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
@@ -15,7 +15,7 @@ const sizeMap: Record<Project['size'], { span: string; ratio: string }> = {
 }
 
 /**
- * SelectedWork — editorial, asymmetric project grid. Each item reveals with a
+ * SelectedWork - editorial, asymmetric project grid. Each item reveals with a
  * clip mask, scales gently on hover, and slides metadata into view.
  */
 export function SelectedWork() {

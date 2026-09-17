@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 
 import { useEffect, useRef } from 'react'
 import Lenis from 'lenis'
@@ -7,7 +7,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { usePrefersReducedMotion } from '@/hooks/usePrefersReducedMotion'
 
 /**
- * SmoothScroll — Lenis + GSAP ScrollTrigger integration.
+ * SmoothScroll - Lenis + GSAP ScrollTrigger integration.
  * Provides the inertial, lerped scroll feel of premium studio sites.
  * Disabled automatically for reduced-motion users.
  */

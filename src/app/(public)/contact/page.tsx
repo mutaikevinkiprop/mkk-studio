@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
@@ -70,12 +70,12 @@ export default function ContactPage() {
                   data-cursor-label='Send'
                   className='inline-flex items-center gap-3 rounded-md bg-signal-cyan px-7 py-4 font-display text-sm font-semibold uppercase tracking-[0.1em] text-ink-navy disabled:opacity-60'
                 >
-                  {status === 'sending' ? 'Sending…' : 'Send Message'}
+                  {status === 'sending' ? 'Sending...' : 'Send Message'}
                 </button>
               </Magnetic>
               {status === 'success' && (
                 <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className='text-sm text-signal-cyan'>
-                  Thanks — we’ll be in touch shortly.
+                  Thanks - we’ll be in touch shortly.
                 </motion.p>
               )}
               {status === 'error' && (

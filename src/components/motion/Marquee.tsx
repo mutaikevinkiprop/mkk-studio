@@ -1,9 +1,9 @@
-﻿'use client'
+'use client'
 
 import { cn } from '@/lib/utils'
 
 /**
- * Marquee — infinite horizontal scroller. Duplicates content for a seamless
+ * Marquee - infinite horizontal scroller. Duplicates content for a seamless
  * loop using a CSS transform animation (GPU-friendly).
  */
 export function Marquee({

@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 
 import Link from 'next/link'
 import { AnimatedText } from '@/components/motion/AnimatedText'
@@ -6,7 +6,7 @@ import { Marquee } from '@/components/motion/Marquee'
 import { navigation, site } from '@/content/site'
 
 /**
- * Footer — oversized editorial closer with marquee, big CTA and studio meta.
+ * Footer - oversized editorial closer with marquee, big CTA and studio meta.
  */
 export function Footer() {
   const year = new Date().getFullYear()
@@ -74,7 +74,7 @@ export function Footer() {
 
       <div className='container-grid border-t border-ink-700 py-8'>
         <p className='col-span-12 font-display text-xs uppercase tracking-[0.2em] text-neutral-500'>
-          © {year} {site.name} — All rights reserved
+          © {year} {site.name} - All rights reserved
         </p>
       </div>
     </footer>

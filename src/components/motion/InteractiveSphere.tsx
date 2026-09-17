@@ -1,10 +1,10 @@
-﻿'use client'
+'use client'
 
 import { useEffect, useRef } from 'react'
 import { usePrefersReducedMotion } from '@/hooks/usePrefersReducedMotion'
 
 /**
- * InteractiveSphere — a dependency-free canvas "wireframe globe" that
+ * InteractiveSphere - a dependency-free canvas "wireframe globe" that
  * reacts to pointer movement and rotation. Renders Signal-Cyan points and
  * connective lines on an Ink-Navy field. GPU-light, DPR-aware, paused
  * off-screen, and disabled for reduced-motion users.

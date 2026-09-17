@@ -1,11 +1,11 @@
-﻿'use client'
+'use client'
 
 import { motion } from 'framer-motion'
 import { AnimatedText } from '@/components/motion/AnimatedText'
 import { services } from '@/content/site'
 
 /**
- * Services — editorial capability list. Rows reveal on scroll; hovering a row
+ * Services - editorial capability list. Rows reveal on scroll; hovering a row
  * drops an accent line in and slides the content, echoing the reference's
  * list interactions.
  */
@@ -26,7 +26,7 @@ export function Services() {
 
         <div className='col-span-12 md:col-span-6 md:col-start-7 md:pt-24'>
           <p className='text-lg text-neutral-400'>
-            A senior team working end-to-end — strategy through production code.
+            A senior team working end-to-end - strategy through production code.
           </p>
         </div>
       </div>

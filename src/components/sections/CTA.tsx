@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 
 import Link from 'next/link'
 import { motion, useScroll, useTransform } from 'framer-motion'
@@ -7,7 +7,7 @@ import { AnimatedText } from '@/components/motion/AnimatedText'
 import { Magnetic } from '@/components/motion/Magnetic'
 
 /**
- * CTA — full-bleed closing call to action with a subtle scroll-linked
+ * CTA - full-bleed closing call to action with a subtle scroll-linked
  * background word and a magnetic primary button.
  */
 export function CTA() {

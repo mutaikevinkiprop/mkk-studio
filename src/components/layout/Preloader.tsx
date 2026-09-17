@@ -1,11 +1,11 @@
-﻿'use client'
+'use client'
 
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { gsap } from 'gsap'
 
 /**
- * Preloader — brand reveal with a percentage counter and a curtain lift.
+ * Preloader - brand reveal with a percentage counter and a curtain lift.
  * Plays once per session; suppressed for reduced-motion users.
  */
 export function Preloader() {

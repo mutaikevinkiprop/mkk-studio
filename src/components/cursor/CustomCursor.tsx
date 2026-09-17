@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 
 import { useEffect, useRef, useState } from 'react'
 import { motion, useMotionValue, useSpring } from 'framer-motion'
@@ -12,7 +12,7 @@ type CursorState = {
 }
 
 /**
- * CustomCursor — a lerped follower dot with contextual states.
+ * CustomCursor - a lerped follower dot with contextual states.
  * - default: small dot
  * - hover (links/buttons): magnified ring
  * - label (projects/nav): magnified blob with text

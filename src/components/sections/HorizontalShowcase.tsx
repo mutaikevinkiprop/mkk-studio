@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 
 import { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
@@ -6,7 +6,7 @@ import { ImageReveal } from '@/components/motion/ImageReveal'
 import { projects } from '@/content/site'
 
 /**
- * HorizontalShowcase — a pinned section where vertical scroll drives a
+ * HorizontalShowcase - a pinned section where vertical scroll drives a
  * horizontal track of project cards. A signature reference interaction.
  */
 export function HorizontalShowcase() {

@@ -1,4 +1,4 @@
-﻿import { clsx, type ClassValue } from 'clsx'
+import { clsx, type ClassValue } from 'clsx'
 import { twMerge } from 'tailwind-merge'
 
 /** Merge Tailwind class names with conflict resolution. */
@@ -6,7 +6,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-/** Linear interpolation — used by cursor / parallax maths. */
+/** Linear interpolation - used by cursor / parallax maths. */
 export function lerp(start: number, end: number, amount: number) {
   return start + (end - start) * amount
 }

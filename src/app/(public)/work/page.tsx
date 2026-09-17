@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
@@ -54,7 +54,7 @@ export default function WorkPage() {
                     {project.title}
                   </h2>
                   <p className='mt-2 text-sm text-neutral-400'>
-                    {project.category} — {project.client}
+                    {project.category} - {project.client}
                   </p>
                 </div>
                 <div className='col-span-12 md:col-span-4'>

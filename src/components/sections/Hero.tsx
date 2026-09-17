@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 
 import Link from 'next/link'
 import { useRef } from 'react'
@@ -8,7 +8,7 @@ import { Magnetic } from '@/components/motion/Magnetic'
 import { hero } from '@/content/site'
 
 /**
- * Hero — full-viewport interactive opener. Oversized line-masked headline,
+ * Hero - full-viewport interactive opener. Oversized line-masked headline,
  * interactive canvas sphere backdrop, scroll-linked parallax, and a scroll cue.
  */
 export function Hero() {

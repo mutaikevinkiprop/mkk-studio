@@ -1,5 +1,5 @@
-﻿/**
- * mkk Studio — Site Content
+/**
+ * mkk Studio - Site Content
  * ------------------------------------------------------------
  * All copy/data lives here so the interface can be rebuilt or
  * re-skinned without touching components. Replace freely.
@@ -31,7 +31,7 @@ export const hero = {
   // Rendered word-by-word
   headline: ['Design', 'systems', 'that', 'move.'],
   intro:
-    'We are mkk Studio — a creative development practice shaping brands, products and digital experiences with precision.',
+    'We are mkk Studio - a creative development practice shaping brands, products and digital experiences with precision.',
   ctaPrimary: { label: 'Start a Project', href: '/contact' },
   ctaSecondary: { label: 'View Work', href: '/work' },
   marquee: [
@@ -149,7 +149,7 @@ export const stats = [
 export const about = {
   headline: 'We build brands that behave like software.',
   body: [
-    'mkk Studio is a small, senior team of designers and engineers. We work end-to-end — strategy, identity, interface and the code that brings it to life.',
+    'mkk Studio is a small, senior team of designers and engineers. We work end-to-end - strategy, identity, interface and the code that brings it to life.',
     'We believe craft is a system, not a finish. Every decision is intentional, from the type scale to the easing curve.',
   ],
   values: [

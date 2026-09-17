@@ -6,7 +6,7 @@ import { AnimatedText } from '@/components/motion/AnimatedText'
 import { stats } from '@/content/site'
 
 /**
- * Manifesto — a scroll-pinned statement. Large type cross-fades word groups
+ * Manifesto - a scroll-pinned statement. Large type cross-fades word groups
  * as the section is held in view, ending on a stats row.
  */
 export function Manifesto() {
@@ -45,7 +45,7 @@ export function Manifesto() {
                   as='h2'
                   trigger='mount'
                   delay={0.9}
-                  lines={['Every decision is', 'intentional — from', 'type to easing.']}
+                  lines={['Every decision is', 'intentional - from', 'type to easing.']}
                   className='font-display text-[9vw] font-medium leading-[0.98] tracking-[-0.03em] text-neutral-100 md:text-[2.6vw]'
                 />
               </motion.div>

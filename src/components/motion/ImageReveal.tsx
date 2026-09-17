@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 
 import { useRef } from 'react'
 import { motion, useInView, useScroll, useTransform } from 'framer-motion'
@@ -19,7 +19,7 @@ type ImageRevealProps = {
 }
 
 /**
- * ImageReveal — an element that reveals via a top-down clip mask while the
+ * ImageReveal - an element that reveals via a top-down clip mask while the
  * inner image counter-scales, then applies a gentle parallax offset on scroll.
  */
 export function ImageReveal({

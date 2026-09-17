@@ -1,11 +1,11 @@
-﻿'use client'
+'use client'
 
 import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 
 /**
- * PageTransition — a cinematic curtain wipe between route changes.
+ * PageTransition - a cinematic curtain wipe between route changes.
  * On route change: an accent panel sweeps up, content swaps, panel exits.
  */
 export function PageTransition({ children }: { children: React.ReactNode }) {
